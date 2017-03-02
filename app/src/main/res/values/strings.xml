@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name" translatable="false">News</string>
+    <string name="logout">Logout</string>
+    <string name="reset">Reset Password</string>
+
+
+    <string name="email">Email</string>
+    <string name="splash_des" translatable="false">Company logo</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="login">Login</string>
+    <string name="login_required">Login to continue</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="success">Login Success</string>
+    <string name="err_email">Invalid email id</string>
+    <string name="err_login">Login Failed</string>
+    <string name="err_password">Password should be 8 or more character long</string>
+    <string name="returning_user">Returning user</string>
+    <string name="err_register">Unable to register</string>
+    <string name="customize">Customize</string>
+    <string name="ok">OK</string>
+    <string name="title_activity_file">File Operations</string>
+    <string name="status">Ambient Status</string>
+    <string name="status_more">Know what people are up to right now. Your music, battery and location statuses are on.</string>
+    <string name="menu_about">DevProfile</string>
+    <string name="menu_showDialog">Show Dialog</string>
+    <string name="menu_exit">Exit</string>
+    <string name="item_des_image">User Photo</string>
+    <string name="signup_success">Signup Success!</string>
+    <string name="err_name">Name should be more than 4 character long</string>
+    <string name="reg_hint_name">Name (more than 4 character long)</string>
+    <string name="reg_hint_email">Email</string>
+    <string name="reg_hint_password">Password (should be 8 character long)</string>
+    <string name="theme_chooser_image_description">Choose one of theme</string>
+    <string name="change_theme">Change theme</string>
+    <string name="title_activity_grid">GridActivity</string>
+    <string name="grid">Grid view</string>
+    <string name="chooser">Chooser</string>
+
+
+    <!--OpenWeatherMap.org apiKey-->
+    <string name="usgs_baseurl" translatable="false">http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson</string>
+    <string name="usgs_starttime" translatable="false">starttime=2017-01-01</string>
+    <string name="video">video</string>
+    <string name="news">This kind of informations are available more. Watch a free video trial. Dont forget to subscribe
+    </string>
+    <string name="settings">settings</string>
+    <string name="USATodayJSONKey">
+        <item>stories</item>
+        <item>description</item>
+        <item>link</item>
+        <item>pubDate</item>
+        <item>title</item>
+    </string>
+</resources>

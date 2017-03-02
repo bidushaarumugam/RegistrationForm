@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="list_item_height">72dp</dimen>
+
+    <dimen name="heading">20sp</dimen>
+    <dimen name="subheading">16sp</dimen>
+    <dimen name="body">16sp</dimen>
+    <dimen name="button">20sp</dimen>
+    <dimen name="companyFontSize">24sp</dimen>
+    <dimen name="drawable_padding">12dp</dimen>
+    <dimen name="toolBar">77dp</dimen>
+    <dimen name="image_size">56dp</dimen>
+
+    <!--Theme selector DialogBox-->
+    <dimen name="theme_button">36dp</dimen>
+    <dimen name="margin_start">4dp</dimen>
+    <dimen name="margin_end">4dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="chooser_text">20sp</dimen>
+    <dimen name="textsixeforView">20dp</dimen>
+    <dimen name="textlocation">30dp</dimen>
+    <dimen name="edittext">20dp</dimen>
+    <dimen name="textformat">15dp</dimen>
+    <dimen name="loadngimage">20dp</dimen>
+    <dimen name="datafixed">60dp</dimen>
+</resources>
