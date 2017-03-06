@@ -18,7 +18,7 @@ import com.example.user.AndRoy.data.NewsContract;
 
 /**
  * main activity
- * 
+ *
  */
 
 
