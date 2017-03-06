@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.user.AndRoy.NewsImageActivity;
@@ -28,6 +29,8 @@ public class NewsCursorAdapter extends CursorAdapter {
     public NewsCursorAdapter(Context context, Cursor c) {
         super(context, c, 0);
         cursor = c;
+
+
     }
 
     @Override
