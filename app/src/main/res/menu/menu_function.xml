@@ -6,7 +6,7 @@
 
 </item>
     <item android:title="news"
-        android:id="@+id/backpressed"
+        android:id="@+id/menu_function_news"
         />
     <item android:id="@+id/back"
         android:title="back" />

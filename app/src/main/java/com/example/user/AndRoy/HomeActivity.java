@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
-import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,12 +13,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
-
 
 import com.example.user.AndRoy.data.MyPreferences;
 import com.google.firebase.auth.FirebaseAuth;
@@ -36,10 +31,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.example.user.AndRoy.MyRecyclerViewAdapter.CustomHolder.imageView;
-
-
-public class HomeActivity extends AppCompatActivity  {
+public class HomeActivity extends AppCompatActivity implements MyRecyclerViewAdapter.OnItemClickListener {
     private static final String TAG = "TAG";
     private List<FeedItem> feedsList;
     private RecyclerView mRecyclerView;
@@ -74,6 +66,14 @@ public class HomeActivity extends AppCompatActivity  {
         } else {
             Log.i(TAG, "getData: Network unavailable");
         }
+    }
+
+    @Override
+    public void OnItemClick(View view, FeedItem feedItem) {
+        Intent intent=new Intent(HomeActivity.this,ImageActivity.class);
+        intent.putExtra("title", feedItem.getTitle());
+        intent.putExtra("imageUrl", feedItem.getThumbnail());
+        startActivity(intent);
     }
 
 
@@ -122,7 +122,7 @@ public class HomeActivity extends AppCompatActivity  {
         progressBar.setVisibility(View.GONE);
 
         if (result == 1) {
-            adapter = new MyRecyclerViewAdapter(HomeActivity.this, feedsList);
+            adapter = new MyRecyclerViewAdapter(getApplicationContext(), feedsList, this);
             mRecyclerView.setAdapter(adapter);
         } else {
             Toast.makeText(HomeActivity.this, "Failed to fetch data!", Toast.LENGTH_SHORT).show();
@@ -144,7 +144,6 @@ public class HomeActivity extends AppCompatActivity  {
             }
         } catch (JSONException e) {
             e.printStackTrace();
-
         }
     }
 

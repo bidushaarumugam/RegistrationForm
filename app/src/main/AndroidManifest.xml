@@ -19,9 +19,16 @@
         </activity>
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".ImageActivity" />
+        <activity android:name=".ImageActivity"
+            android:parentActivityName=".HomeActivity"/>
         <activity android:name=".LoadActivity" />
-        <activity android:name=".NewsActivity"></activity>
+        <activity android:name=".NewsActivity" />
+
+        <provider
+            android:name=".data.NewsProvider"
+            android:authorities="com.example.user.AndRoy" />
+
+        <activity android:name=".NewsImageActivity"></activity>
     </application>
 
 </manifest>

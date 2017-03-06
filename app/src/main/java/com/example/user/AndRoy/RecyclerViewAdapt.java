@@ -17,7 +17,7 @@ import java.util.List;
 import static com.example.user.AndRoy.RecyclerViewAdapt.CustomHolder.pict;
 
 /**
- * Created by user on 1/3/17.
+ * This class is not used. use it in future for recyclerview
  */
 
 public class RecyclerViewAdapt extends RecyclerView.Adapter<MyRecyclerViewAdapter.CustomHolder> {
@@ -61,8 +61,8 @@ public class RecyclerViewAdapt extends RecyclerView.Adapter<MyRecyclerViewAdapte
 
         public CustomHolder(View itemView) {
             super(itemView);
-            pict=(ImageView)itemView.findViewById(R.id.imageView2);
-            head=(TextView)itemView.findViewById(R.id.textView);
+            pict=(ImageView)itemView.findViewById(R.id.img_item_news_image);
+            head=(TextView)itemView.findViewById(R.id.tv_item_news_headline);
         }
     }
 }
