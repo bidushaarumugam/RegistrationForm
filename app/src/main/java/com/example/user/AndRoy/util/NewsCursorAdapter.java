@@ -16,6 +16,11 @@ import com.example.user.AndRoy.NewsImageActivity;
 import com.example.user.AndRoy.R;
 import com.example.user.AndRoy.data.NewsContract;
 
+/**
+ * main activity
+ * 
+ */
+
 
 public class NewsCursorAdapter extends CursorAdapter {
     private Cursor cursor;
